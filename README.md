@@ -80,7 +80,7 @@ python setup.py install
 ## How PySparNN works
 Searching for a document in an collection of D documents is naively O(D) (assuming documents are constant sized). 
 
-However! we can create a tree structure where the first level is O(sqrt(D)) and each of the leaves are also O(sqrt(D)) - on average.
+However, we can create a tree structure where the first level is O(sqrt(D)) and each of the leaves are also O(sqrt(D)) - on average.
 
 We randomly pick sqrt(D) candidate items to be in the top level. Then -- each document in the full list of D documents is assigned to the closest candidate in the top level.
 
